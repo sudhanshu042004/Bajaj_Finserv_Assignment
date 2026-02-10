@@ -33,6 +33,7 @@ public class ApiController {
 
     @PostMapping("/bfhl")
     public ResponseEntity<ApiResponse> handlePost(@RequestBody ApiRequest request) {
+        System.out.println("Received Request: " + request);
         // Only one of fibonacci, prime, lcm, hcf, AI should be present
         // Or handle all if present? Requirement says "Each request will contain exactly
         // one of".
