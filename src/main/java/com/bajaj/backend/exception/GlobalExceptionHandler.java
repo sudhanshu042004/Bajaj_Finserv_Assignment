@@ -35,7 +35,7 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.builder()
                 .success(false)
                 .officialEmail(getOfficialEmail())
-                .data("Invalid Request Format: " + e.getMessage())
+                .data("Invalid Request Format")
                 .build());
     }
 
